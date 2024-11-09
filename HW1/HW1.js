@@ -28,3 +28,12 @@ console.log("number2 ** number1 = " + exp);
 let squareRoot = number2 ** 0.5;
 console.log("Square root from number2 = " + squareRoot);
 
+// toString
+console.log(`${number2}`);
+
+// Numbers
+let someVar = '666';
+console.log(+ someVar);
+
+// Boolean
+console.log(!!number1);

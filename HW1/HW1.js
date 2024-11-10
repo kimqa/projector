@@ -4,36 +4,30 @@ let number1 = 2;
 let number2 = 25;
 
 // Addition
-let sum;
-sum = number2+number1;
-console.log("number2 + number1 = " + sum);
+
+console.log(`number2 + number1 = ${number2+number1}`)
 
 // Subtraction
-let minus = number2 - number1;
-console.log("number2 - number1 = " + minus);
+console.log(`number2 - number1 = ${number2 - number1}`);
 
 // Multiplication
-let multiplication = number1 * number2;
-console.log("number1 * number2 = " + multiplication)
+console.log(`number1 * number2 = ${number1 * number2}`)
 
-// Division
-let div = number2/number1;
-console.log("number2/number1 = " + div);
+// Division (for test)
+console.log(`number2/number1 = ${number2/number1}`);
 
 // Exponentiation
-let exp = number2 ** number1;
-console.log("number2 ** number1 = " + exp);
+console.log(`number2 ** number1 =${number2 ** number1}` );
 
 // Square root
-let squareRoot = number2 ** 0.5;
-console.log("Square root from number2 = " + squareRoot);
+console.log(`Square root from ${number2} = ${number2 ** 0.5}`);
 
 // toString
 console.log(`${number2}`);
 
 // Numbers
 let someVar = '666';
-console.log(+ someVar);
+console.log(+someVar);
 
 // Boolean
 console.log(!!number1);

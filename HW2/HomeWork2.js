@@ -6,7 +6,7 @@ Task # 1
 а замість значень кратних і 3, і 5 - `ЛолКек`
  */
     for(let i = 1; i < 100; i++) {
-    if( i % 3 ===0 && i % 5 === 0 ) {
+    if( i % 3 === 0 && i % 5 === 0 ) {
         console.log(`${i} LolKek`);
     } else if(i % 3 === 0) {
         console.log(`${i} Lol`);
@@ -28,7 +28,7 @@ Task #2
 With FOR loop
  */
 function evenNumberForLoop(value) {
-    if(typeof value !== 'number') {
+    if(typeof value !== 'number' && isNaN(value)) { //Type of NaN will be "number", we need to check it too
         console.log('Таке чуство шо Бог десь наказує нас за шось');
     } else {
         for (let i = 2; i < value; i= i+2) {
@@ -44,7 +44,7 @@ evenNumberForLoop(8);
 Task #2 While
  */
 function evenNumberWhileLoop(value) {
-    if(typeof value !== 'number') {
+    if(typeof value !== 'number' && isNaN(value)) {
         console.log('Таке чуство шо Бог десь наказує нас за шось');
     } else {
         let i = 2;

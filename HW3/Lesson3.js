@@ -1,7 +1,23 @@
 'use strict';
-function test(test='test') {
-    console.log(test);
-}
+/*
+Дописать
 
-test();
-test(123);
+const createHelloWorld = function() {
+
+};
+
+const f = createHelloWorld();
+console.log(f()); // "Hello World"
+/**
+ * @return {Function}
+ */
+
+const createHelloWorld = function() {
+    return () => {
+        return "Hello World"
+    }
+};
+console.log(typeof createHelloWorld())
+
+const f = createHelloWorld();
+console.log(f()); // "Hello World"

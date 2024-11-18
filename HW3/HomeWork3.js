@@ -7,13 +7,15 @@ function recursiveOddSumTo(number) {
 // тут ваш код
     if (number <= 0 ) {
         return 0;
-    } else if (number % 2 === 0) {
+    }
+
+    if (number % 2 === 0) {
         return recursiveOddSumTo(number - 1);
     } else {
         return number + recursiveOddSumTo(number -1);
     }
 
-};
+}
 
 console.log(recursiveOddSumTo(1)) // 1
 console.log(recursiveOddSumTo(10)) // 25
@@ -29,11 +31,11 @@ function iterativeOddSumTo(number) {
     for (let i = 1; i <= number; ++i) {
         if(i % 2 === 1) {
             sum = sum + i;
-        } else {}
+        }
     }
     return sum;
 
-};
+}
 
 console.log(iterativeOddSumTo(1)) // 1
 console.log(iterativeOddSumTo(10)) // 25

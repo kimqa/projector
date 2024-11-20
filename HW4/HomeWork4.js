@@ -6,11 +6,30 @@ const userNames = ["Петрик Ольга Іванівна", "Гнатюк П�
 let initials;
 
 // тут ваш код ...
-userNames.forEach(userName => {
+for(let i = 0; i < userNames.length; i++) {
+    const tempArr = userNames[i].split(" ");
+    tempArr.forEach( (name) => {
+        console.log(name)
+        name.substring(1);
 
-})
+        }
 
-console.log(initials); // [ "Г.П.А.", "П.О.І.", "Р.А.О."]
+    )
+
+    console.log(tempArr)
+
+}
+
+console.log(11111111111)
+
+
+
+// userNames.forEach(userNames => {
+// console.log(userNames);
+// })
+// console.log(userNames);
+console.log(typeof initials);
+console.log(initials); // ["Г.П.А.", "П.О.І.", "Р.А.О."]
 
 /*
 2. Задача на фільтрування масиву
@@ -22,7 +41,7 @@ console.log(initials); // [ "Г.П.А.", "П.О.І.", "Р.А.О."]
 
 Рішення має працювати незалежно від конкретних значень в масиві імен
  */
-const userNames = ['Петро', 'Емма', 'Юстин', 'Ілля', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена'];
+const userNames_ = ['Петро', 'Емма', 'Юстин', 'Ілля', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена'];
 let filteredNames;
 
 // тут ваш код...
@@ -37,8 +56,8 @@ let reverseMaxValue;
 
 // тут ваш код...
 
-console.log(reverseMaxValue); // 9854
-console.log(typeof reverseMaxValue); // 'number'
+// console.log(reverseMaxValue); // 9854
+// console.log(typeof reverseMaxValue); // 'number'
 
 /*
 4. Задача на знаходження добутку масиву чисел з невідомою глибиною вкладеності:

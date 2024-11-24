@@ -17,7 +17,7 @@
 
 Приклади:
  */
-function durationBetweenDates(start, end, size) {
+function durationBetweenDates(start= '01 Jan 1970', end = '01 Jan 1970', size = 'days') {
     const startDate = new Date(start);
     const endDate = new Date(end);
     let dif = Math.abs(startDate - endDate)
@@ -44,3 +44,4 @@ function durationBetweenDates(start, end, size) {
 }
 durationBetweenDates('02 Aug 1985', '03 Aug 1985', 'seconds')  // поверне '86400 seconds'
 durationBetweenDates('31 Jan 2022', '03 Feb 2021', 'days')  // поверне '362 days'
+durationBetweenDates()

@@ -7,17 +7,16 @@ const userNames = ["Петрик Ольга Іванівна", "Гнатюк П�
 let initials;
 
 // тут ваш код ...
-let tempArray;
 initials = userNames.map(
 
     function (name) {
-        tempArray = name.split(" ");
 
+        let tempArray = name.split(" ");
         name = tempArray.map((value) => {
             return value[0];
             }
         )
-        return name.toString();
+        return name.join(".").toString();
     }
 ).sort()
 

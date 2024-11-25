@@ -14,9 +14,10 @@
 const userNames = ['Петро', 'Емма', 'Юстин', 'Ілля', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена'];
 let filteredNames;
 filteredNames = [];
+const vowels = ["А", "О", "У", "И", "І", "Е", "Ю", "Я"];
 for (let i = 0; i < userNames.length; i++) {
     name = userNames[i];
-    if (name[0] ==="А"||name[0] ==="О"||name[0] ==="У"||name[0] ==="И"||name[0] ==="І"||name[0] ==="Е"||name[0] ==="Ю"||name[0] ==="Я") {
+    if (vowels.includes(userNames[i][0])) {
         filteredNames.push(userNames[i]);
     }
 }
@@ -25,7 +26,7 @@ console.log(filteredNames); // ['Емма', 'Юстин', 'Ілля', 'Яна', 
 //через вбудований метод масивів
 filteredNames2 = [];
 userNames.forEach(userName => {
-    if (userName[0] ==="А"||userName[0] ==="О"||userName[0] ==="У"||userName[0] ==="И"||userName[0] ==="І"||userName[0] ==="Е"||userName[0] ==="Ю"||userName[0] ==="Я") {
+    if (vowels.includes(userName[0])) {
         filteredNames2.push(userName);
     }
 })

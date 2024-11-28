@@ -1,3 +1,4 @@
+'use strict'
 /*
 2. Задача на фільтрування масиву
 
@@ -12,11 +13,9 @@
 // тут ваш код...
 
 const userNames = ['Петро', 'Емма', 'Юстин', 'Ілля', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена'];
-let filteredNames;
-filteredNames = [];
+let filteredNames = [];
 const vowels = ["А", "О", "У", "И", "І", "Е", "Ю", "Я"];
 for (let i = 0; i < userNames.length; i++) {
-    name = userNames[i];
     if (vowels.includes(userNames[i][0])) {
         filteredNames.push(userNames[i]);
     }
@@ -24,7 +23,7 @@ for (let i = 0; i < userNames.length; i++) {
 console.log(filteredNames); // ['Емма', 'Юстин', 'Ілля', 'Яна', 'Антон', 'Олена']
 
 //через вбудований метод масивів
-filteredNames2 = [];
+let filteredNames2 = [];
 userNames.forEach(userName => {
     if (vowels.includes(userName[0])) {
         filteredNames2.push(userName);

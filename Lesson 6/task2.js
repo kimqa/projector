@@ -9,4 +9,5 @@ console.log(multiply(4)(3))		// 12
 
 function multiply(a) {
     // тут ваш код*
+    return (b) => a * b;
 }

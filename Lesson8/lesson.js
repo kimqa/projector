@@ -142,3 +142,6 @@ let test2 = [
     "620f858501cac71213521e97"
 ];
 console.log(test2.length)
+
+const test = "{test : test}"
+const test1 = JSON.parse(test);
